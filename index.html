@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Janmashtami!</title>
+    <style>
+        /* प्रीमियम VLVIP फेस्टिव बैकग्राउंड */
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #120024 0%, #330033 50%, #4d004d 100%);
+            color: #ffffff;
+            font-family: 'Georgia', serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow-x: hidden;
+            text-align: center;
+        }
+
+        /* चमकती हुई VIP हेडिंग */
+        .main-title {
+            color: #FFD700;
+            font-size: 2.8rem;
+            font-weight: bold;
+            text-shadow: 0px 0px 20px #ff6600, 0px 0px 10px #FFD700;
+            margin: 20px 0;
+            animation: pulse 2s infinite;
+        }
+
+        /* कृष्ण जी की असली और सुंदर फोटो के लिए स्टाइल */
+        .krishna-img-box {
+            margin: 20px auto;
+            width: 85%;
+            max-width: 320px;
+            border-radius: 25px;
+            box-shadow: 0px 0px 35px #FFD700, 0px 0px 15px #ff6600;
+            border: 4px solid #FFD700;
+            overflow: hidden;
+            animation: floatMotion 3s ease-in-out infinite;
+        }
+
+        .krishna-img-box img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* सुंदर शायरी संदेश */
+        .sub-title {
+            color: #00FFCC;
+            font-size: 1.3rem;
+            line-height: 1.8;
+            padding: 0 20px;
+            text-shadow: 1px 1px 8px #000000;
+            margin-bottom: 30px;
+        }
+
+        /* जादुई प्ले बटन संगीत के लिए */
+        .play-btn {
+            background: linear-gradient(45deg, #FFD700, #ff6600);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border-radius: 50px;
+            box-shadow: 0 0 15px #FFD700;
+            cursor: pointer;
+            animation: bounce 1.5s infinite;
+        }
+
+        /* ऊपर-नीचे तैरने का एनीमेशन */
+        @keyframes floatMotion {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.03); }
+            100% { transform: scale(1); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- मुख्य हेडिंग -->
+    <div class="main-title">✨ Happy Janmashtami ✨</div>
+
+    <!-- कृष्ण जी की 100% असली सुंदर तस्वीर (यह हमेशा लोड होगी क्योंकि यह HTML है) -->
+    <div class="krishna-img-box">
+        <img src="https://unsplash.com" alt="Jai Shree Krishna">
+    </div>
+
+    <!-- जादुई संगीत बटन -->
+    <button class="play-btn" onclick="playMusic()">👉 यहाँ टच करें 🪈</button>
+
+    <!-- नीचे का बधाई संदेश -->
+    <div class="sub-title">
+        <br>माखन चोर नन्द किशोर, बांधे जिसने प्रीत की डोर...<br>हरे कृष्णा! 🌸🪈
+    </div>
+
+    <!-- बैकग्राउंड भजन (Music) -->
+    <audio id="bgMusic" loop>
+        <source src="https://soundhelix.com" type="audio/mp3">
+    </audio>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById("bgMusic");
+            audio.play();
+            alert("श्री कृष्ण जन्माष्टमी की हार्दिक शुभकामनाएं! 🙏✨");
+        }
+    </script>
+
+</body>
+</html>
